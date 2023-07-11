@@ -1,1 +1,1 @@
-Questo file contiene esercizi.
+Questa repository contiene esercizi.
