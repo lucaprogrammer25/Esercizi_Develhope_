@@ -7,33 +7,52 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML Lesson</title>
+    <title>Registration form</title>
   </head>
   <body>
-    <h1>Registration form</h1><br>
+
+   <h1>Compila questo form per registrarti!</h1><br>
     <form action="">
-      <input type="Email" placeholder="Inserisci email"><br>
-      <input type="Password" placeholder="Inserisci password"><br>
-      <input type="Nome e Cognome" placeholder="Inserisci nome e cognome"><br>
-      <input type="Numero di telefono" placeholder="Inserisci numero di telefono"><br>
-      <input type="Email" placeholder="Inserisci email"><br><br>
-      <label for="Piano">Scelta del piano:</label><br>
-      <select name="Piani" id="Piani">
-      <option value="default"></option>
-      <option value="Free Plan">Free Plan</option>
-      <optgroup label="Price Plan">
-        <option value="first price">20£</option>
-        <option value="second price">40£</option>
-        <option value="third price">60£</option>
-      </optgroup>
-          </select><br>
-          <input type="checkbox" name="Pro Plan" value="Pro Plan"/> Pro Plan <br><br>
-      <input type="Carta di credito" placeholder="Numero carta di credito"><br> 
-      <input type="CVC" placeholder="CVC"><br>  
-      <label for="Data di scadenza">Data di scadenza:</label><br>
-      <input type="month" /><br><br>
-      <input type="Indirizzo di fatturazione" placeholder="Indirizzo di fatturazione"><br>
-      <input type="submit" value="Invia"/>
+     <div>
+       <label for="email">Email</label><br>
+       <input type="Email" name="Email" placeholder="Inserisci email"><br>
+       <label for="password">Password</label><br>
+       <input type="Password" name="Password" placeholder="Inserisci password"><br>
+       <label for="name">Nome</label><br>
+       <input type="text" name="name" placeholder="Inserisci il tuo nome"><br>
+       <label for="surname">Cognome</label><br>
+       <input type="text" name="surname" placeholder="Inserisci il tuo cognome"><br>
+       <label for="Birthday">Data di nascita</label><br>
+       <input type="date"><br>
+       <label for="tel">Numero di telefono</label><br>
+       <input type="tel" name="telephone number" placeholder="Inserisci numero di telefono"><br><br>
+      </div>
+     <div>
+       <label for="Piano">Scelta del piano:</label><br>
+       <select name="Piani" id="Piani">
+       <option value="default"></option>
+       <option value="Free Plan">Free Plan</option>
+     <optgroup label="Price Plan">
+       <option value="first price">20£</option>
+       <option value="second price">40£</option>
+       <option value="third price">60£</option>
+     </optgroup>
+      </select><br>
+       <input type="checkbox" name="Pro Plan" value="Pro Plan"/> Pro Plan <br><br>
+     </div>
+     <div>
+      <label for="text">Carta di credito</label><br>
+       <input type="text" name="credit card number" placeholder="Numero carta di credito"><br> 
+       <label for="text">CVC</label><br>
+       <input type="text" name="CVC" placeholder="Inserisci CVC"><br>  
+       <label for="Data di scadenza">Data di scadenza:</label><br>
+       <input type="month" name="credit card expiration" min="2023-07"/><br><br>
+       <input type="text" name="billing address" placeholder="Indrizzo di fatturazione"><br> 
+       <input type="text" name="billing address" placeholder="Inserisci via e n° civico"><br>
+      </div>
+     <div>
+      <button>Invia</button>
+    </div>
     </form>
   </body>
 </html>
