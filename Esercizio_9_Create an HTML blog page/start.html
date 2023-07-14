@@ -26,7 +26,7 @@
        <table width="60%" bgcolor="cda434">
       <nav>
           <tr>
-              <td width="2%"><a href="http://127.0.0.1:5500/start.html?Email=&Password=&name=&surname="> <font size="+2"><b><FONT COLOR=white>Home</FONT></b></font></a></td>
+              <td width="2%"><a href="http://127.0.0.1:5500/Esercizio_9_Create%20an%20HTML%20blog%20page/start.html"> <font size="+2"><b><FONT COLOR=white>Home</FONT></b></font></a></td>
               <td width="20%"><a href="https://it.wikipedia.org/wiki/Chitarra"> <font size="+2"><b><FONT COLOR=white>Link</FONT></b></font></a></td>
               <td width="1%"><input type="text" name="Searce" placeholder="Search"></td>
               <td width="5%"> <button type="search">Search</button></td> 
@@ -51,13 +51,13 @@
          <h2>Compila questo form per registrarti alla newsletter!</h2>
         <br />
         <form action="">
-            <label for="email">Email</label><br />
+            <label for="email">Email<abbr Title= "required">*</abbr></label><br />
             <input type="Email" name="Email" placeholder="Inserisci email" required /><br />
-            <label for="password">Password</label><br />
-            <input type="Password" name="Password" placeholder="Inserisci password" required /><br />
-            <label for="name">Nome</label><br /> 
+            <label for="password">Password<abbr Title= "required">*</abbr></label><br />
+            <input type="Password" name="Password" placeholder="Inserisci password" minlength="4" required /><br />
+            <label for="name">Nome<abbr Title= "required">*</abbr></label><br /> 
             <input type="text" name="name" placeholder="Inserisci il tuo nome" required/><br />
-            <label for="surname">Cognome</label><br />
+            <label for="surname">Cognome<abbr Title= "required">*</abbr></label><br />
             <input type="text" name="surname" placeholder="Inserisci il tuo cognome" required/><br />
             <label for="upgrade blog">Vuoi essere aggiornato sulle novità del blog?</label>
             <input type="checkbox"  name="upgrade blog" value="Bike"><br>
