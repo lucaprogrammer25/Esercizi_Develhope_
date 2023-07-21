@@ -1,0 +1,129 @@
+:root{
+    --BGcolor: #4c535f;
+    --hoverBGcolor: #cab1b1;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--BGcolor);
+}
+
+.navbar {
+    background-color: var(--BGcolor);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    font-size: large;
+}
+
+.home {
+    font-weight: bolder;
+}
+
+.link,
+.dropdownButton {
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.dropdownButton:hover {
+    background-color:var(--hoverBGcolor);
+}
+
+.dropdownButton {
+    background-color: transparent;
+    color: white;
+    font-size: 19px;
+    border: none;
+}
+
+.dropdownLink {
+    display: none;
+    position:fixed;
+    background-color: var(--BGcolor);
+    min-width: 140px;
+}
+
+.dropdownLink a {
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.dropdownLink a:hover {
+    background-color:var(--hoverBGcolor);
+    color: black;
+}
+
+.dropdown:hover .dropdownLink {
+    display: block;
+}
+
+.disabled {
+    padding: 8px 16px;
+    font-size: large;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    opacity: 0.4;
+}
+
+.search {
+    font-size: large;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: 5px;
+    width: auto;
+    height: 35px;
+}
+
+.buttonSearch {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 2px solid green;
+    border-radius: 6px;
+    color: green;
+    width: auto;
+    height: 55px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.buttonSearch:hover {
+    background-color: green;
+    color: white;
+}
+
+hr {
+    color: white;
+    margin-top: 0%;
+}

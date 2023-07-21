@@ -1,0 +1,54 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body{
+   max-width: 400px;
+   max-height: auto;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   scroll-margin-block:unset;
+}
+
+.card {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    
+
+}
+
+
+.jack {
+    width: 100%;
+    height: auto; 
+}
+
+h1 {
+    margin-left: 3%;
+    margin-right: 5%;
+    font-size: x-large;
+}
+
+p,
+a {
+    font-size: large;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 10%;
+
+}
+
+a:visited{
+    color:rgb(250, 142, 1);
+    
+}
+
+
+.link{
+    font-weight: bolder;
+}
