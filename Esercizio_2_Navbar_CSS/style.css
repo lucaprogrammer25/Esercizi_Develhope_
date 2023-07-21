@@ -21,10 +21,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     padding: 10px;
 }
 
+.navbar h1 {
+    margin: 0;
+    padding: 0;
+}
 
 .navbar ul {
     list-style: none;
@@ -43,9 +47,14 @@ body {
     font-weight: bolder;
 }
 
-.link{
+.link,
+.dropdownButton {
     margin-right: 8px;
     opacity: 0.7;
+}
+
+.dropdownButton:hover {
+    background-color:var(--hoverBGcolor);
 }
 
 .dropdownButton {
@@ -53,15 +62,7 @@ body {
     color: white;
     font-size: 19px;
     border: none;
-    margin-right: 8px;
-    opacity: 0.7;
 }
-
-
-.dropdownButton:hover {
-    background-color:var(--hoverBGcolor);
-}
-
 
 .dropdownLink {
     display: none;
@@ -69,12 +70,6 @@ body {
     background-color: var(--BGcolor);
     min-width: 140px;
 }
-
-.dropdown:hover .dropdownLink {
-    display: block;
-}
-
-
 
 .dropdownLink a {
     color: rgb(255, 255, 255);
@@ -86,6 +81,9 @@ body {
     color: black;
 }
 
+.dropdown:hover .dropdownLink {
+    display: block;
+}
 
 .disabled {
     padding: 8px 16px;
@@ -95,6 +93,7 @@ body {
     color: #fff;
     border-radius: 4px;
     opacity: 0.4;
+    padding: 0%;
 }
 
 .search {
@@ -106,7 +105,7 @@ body {
     margin-right: 5px;
     width: auto;
     height: 35px;
-   
+    position: static
 }
 
 .buttonSearch {
@@ -120,7 +119,7 @@ body {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: large;
     font-weight: bolder;
-   
+    position: static
 }
 
 .buttonSearch:hover {
