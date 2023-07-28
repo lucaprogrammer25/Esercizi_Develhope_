@@ -133,14 +133,31 @@ hr {
   display: none;
 }
 
+.Titlemediaquery {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     display: none;
   }
 
+  .mobileMediaQuery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  .Titlemediaquery {
+    display: block;
+  }
+
   .hamburgerMenu {
     display: flex;
-    flex-direction: column;
+    align-content: right;
     width: 50px;
     height: 50px;
     border-radius: 100px;
