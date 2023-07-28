@@ -1,0 +1,169 @@
+:root {
+  --BGcolor: #4c535f;
+  --hoverBGcolor: #cab1b1;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--BGcolor);
+}
+
+.navbar {
+  background-color: var(--BGcolor);
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  padding: 10px;
+}
+
+.navbar h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  font-size: large;
+}
+
+.home {
+  font-weight: bolder;
+}
+
+.link,
+.dropdownButton {
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.dropdownButton:hover {
+  background-color: var(--hoverBGcolor);
+}
+
+.dropdownButton {
+  background-color: transparent;
+  color: white;
+  font-size: 19px;
+  border: none;
+}
+
+.dropdownLink {
+  display: none;
+  position: fixed;
+  background-color: var(--BGcolor);
+  min-width: 140px;
+}
+
+.dropdownLink a {
+  color: rgb(255, 255, 255);
+  display: block;
+}
+
+.dropdownLink a:hover {
+  background-color: var(--hoverBGcolor);
+  color: black;
+}
+
+.dropdown:hover .dropdownLink {
+  display: block;
+}
+
+.disabled {
+  padding: 8px 16px;
+  font-size: large;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0.4;
+  padding: 0%;
+}
+
+.search {
+  font-size: large;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: 5px;
+  width: auto;
+  height: 35px;
+  position: static;
+}
+
+.buttonSearch {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid green;
+  border-radius: 6px;
+  color: green;
+  width: auto;
+  height: 55px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  position: static;
+}
+
+.buttonSearch:hover {
+  background-color: green;
+  color: white;
+}
+
+hr {
+  color: white;
+  margin-top: 0%;
+}
+.hamburgerMenu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+  }
+
+  .hamburgerMenu:hover {
+    background-color: grey;
+  }
+
+  .hamburgerMenu button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    background: none;
+    border-radius: 100px;
+  }
+
+  .hamburgerMenu img {
+    width: 40px;
+    height: 40px;
+    background-image: none;
+    z-index: 1;
+    position: absolute;
+    padding: 5px;
+  }
+}
