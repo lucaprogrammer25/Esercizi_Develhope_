@@ -145,6 +145,7 @@ hr {
   .mobileMediaQuery {
     display: flex;
     flex-direction: row;
+    height: 60px;
     justify-content: space-between;
     padding: 5px;
     color: white;
