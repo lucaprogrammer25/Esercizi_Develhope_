@@ -1,0 +1,117 @@
+
+.containerCards{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+
+.card1, .card2, .card3{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
+    background-image: linear-gradient(#A9A9A9, #F2F2F2);
+    border-radius:20px;
+    padding-top: 8px;
+   }
+   
+
+.avatarName{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: space-between;
+    
+
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+       
+}
+
+.wrapNameDate{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    
+}
+
+.name{
+   color: black;
+   font-size: 17px;
+   padding-top: 5px;
+   font-weight: bold;
+   
+}
+
+.date{
+    color: white;
+    font-size: 13px;
+
+}
+
+.other{
+    color: black;
+    font-size:40px;
+    font-weight: bolder;
+    
+}
+
+.iconClass{
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px
+}
+
+
+.cat1{
+    padding-top: 8px;
+    
+}
+
+
+
+.heart{
+    width: 20px;
+    height: 20px;
+    background-image: none;
+      
+}
+
+
+
+.cloud{
+    transform: scaleX(-1);
+    width: 20px;
+    height: 20px;
+    background-image: none;
+   
+}
+
+@media screen and (max-width:375px) {
+    .containerCards{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .containerCards{
+        flex-wrap: wrap;
+        justify-content: left;
+        gap:20px
+    }
+   
+       
+    
+}
