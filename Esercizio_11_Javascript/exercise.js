@@ -1,5 +1,5 @@
 function adultFilter(persons) {
-  return persons.filter(persons=> persons.age>=18)    //uso .filter per filtrare solo chi ha l'età uguale o superiore a 18.
+  return persons.filter(persons=> persons.age>=18)    
 }
 
 const persons = [
