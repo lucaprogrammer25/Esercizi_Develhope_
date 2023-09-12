@@ -1,0 +1,70 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; flex-direction: column; align-items: left;">
+    
+    </div>
+  </body>
+</html>
+
+<script>
+  // code here
+const API_URL = "https://jsonplaceholder.typicode.com/todos";
+
+//base dati altrimenti Alessandro mi bastona!
+const state = {                     
+  data: [],
+};
+
+ //creo dinamicamente una lista
+const generateUL = (item) => {              
+  return `
+    <ul>
+        <li>userId: ${item.userId}</li>
+        <li>id: ${item.id}</li>
+        <li>title: ${item.title}</li>
+        <li>completed: ${item.completed}</li>
+    </ul>
+    `
+};
+
+
+ //gestisco gli errori
+const outError = (error) => {      
+  console.log(error);
+};
+
+
+//faccio il fetch del link dei dati
+const fetchData = async () => {          
+  try {
+    const response = await fetch(API_URL, {
+     method:"GET",
+    });
+
+    state.data = await response.json();       
+
+
+//li salvo sullo state    
+  } catch (error) {
+    outError(error)
+  }
+};
+
+
+//renderizzo su pagina 
+const renderData = () => {                     
+  const container = document.getElementById("container");
+  const HTML = state.data.map((item) => generateUL(item)).join("");
+  container.innerHTML = HTML; 
+}
+
+
+//funzione di avvio
+const init = async () => {          
+  await fetchData();
+  renderData()
+}
+
+init()
+
+</script>
