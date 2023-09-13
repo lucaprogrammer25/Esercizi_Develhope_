@@ -37,21 +37,23 @@ const outError = (error) => {
 //faccio il fetch del link dei dati
 const fetchData = async () => {          
   try {
-    const response = await fetch(API_URL, {
+    const response = await fetch (API_URL, {
      method:"GET",
     });
+
+    //li salvo sullo state   
 
     state.data = await response.json();       
 
 
-//li salvo sullo state    
+ 
   } catch (error) {
     outError(error)
   }
 };
 
 
-//renderizzo su pagina 
+//renderizzo su browser(HTML)
 const renderData = () => {                     
   const container = document.getElementById("container");
   const HTML = state.data.map((item) => generateUL(item)).join("");
@@ -61,7 +63,7 @@ const renderData = () => {
 
 //funzione di avvio
 const init = async () => {          
-  await fetchData();
+  await fetchData(); 
   renderData()
 }
 

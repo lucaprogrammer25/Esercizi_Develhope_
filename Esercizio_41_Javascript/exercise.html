@@ -1,0 +1,67 @@
+<html>
+
+<body>
+  <div id="container" style="display: flex; align-items: center;">
+    <h2 id="title"></h2>
+    <input type="checkbox" id="checkbox">
+  </div>
+</body>
+
+</html>
+
+<script>
+  const $title = document.querySelector("#title");
+  const $checkbox = document.querySelector("#checkbox");
+
+
+  const API_URL = "https://jsonplaceholder.typicode.com/todos/4";
+
+
+  const state = {
+    data: [],
+  };
+
+
+
+  const outError = (error) => {
+    console.log(error)
+  };
+
+
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(API_URL, {
+        method: "GET",
+      });
+
+      state.data = await response.json();
+
+
+    } catch (error) {
+      outError(error)
+
+    }
+  };
+
+
+
+  const renderData = () => {
+    $title.innerHTML = `Title: ${state.data.title}`
+
+    $checkbox.checked = state.data.completed;
+  };
+
+
+
+  const init = async () => {
+    await fetchData();
+    renderData()
+
+
+  };
+
+  init();
+
+
+</script>
