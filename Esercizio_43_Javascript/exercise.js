@@ -4,12 +4,25 @@ const user = {
   age: 25,
 };
 
-const localStorageFunc = () =>{
+const outError = (error) => {
+  console.error(error)
+};
+const localStorageFunc = () => {
+  try {
+
     const stringUser = JSON.stringify(user);
     localStorage.setItem("user", stringUser);
+    console.log("Operazione completata, oggetto aggiunto");
+  }
+
+  catch (error) {
+    outError("Si è verificato un errore")
+  }
+
 }
 
-const init = () =>{
+
+const init = () => {
   localStorageFunc();
 }
 
