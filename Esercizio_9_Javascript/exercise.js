@@ -4,10 +4,8 @@ const person = {
   age: 25
 }
 
-// Print values of person using Object.keys
+const keys = Object.keys(person)
 
-for (const key in person) {
-  console.log(`${key}: ${person[key]}`);
+for (value of keys){
+  console.log(`${value}: ${person[value]}`)
 }
-
-const keys = Object.keys(person);
