@@ -20,11 +20,19 @@
 </html>
 
 <script>
-  const $formInput = document.querySelector(".form-input")
+  const $formInput = document.querySelectorAll(".form-input");  //se devo stampare il valore di tutt'e tre i campi
+  // const $formInput = document.querySelector(".form-input")  //se devo stampare solo il primo valore (firstName)
 
-  const printFormInput = () => {
-    console.log($formInput)
+  const printFormInput = () => {         //se devo stampare il valore di tutt'e tre i campi
+    $formInput.forEach(input =>{
+      onsole.log(input.value)
+    })
   }
+
+  // const printFormInput = () => {         //se devo stampare solo il primo valore (firstName)
+  //   console.log($formInput.value)
+    
+  // }
 
   printFormInput()
 </script>
