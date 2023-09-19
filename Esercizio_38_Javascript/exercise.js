@@ -32,3 +32,4 @@ checkLogged(isLogged)
     .catch((err) => {
         console.error(err);
     });
+   

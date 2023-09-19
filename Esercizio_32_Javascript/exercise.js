@@ -5,12 +5,7 @@ const person = {
   age: 25,
 };
 
-const key ={    //const key per filtrare id e age
-  id:person.id,
-  age:person.age
-}
 
-
-const json = JSON.stringify(key);    // modifico il parametro da person a key 
+const json = JSON.stringify(person, [`id`, `age`]);    
 
 console.log(json); // Should return: { id: 1, age: 25 }

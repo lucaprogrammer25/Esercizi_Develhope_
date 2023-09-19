@@ -8,4 +8,5 @@ const callBackFunc = () => {
     console.log("hello")
 };
 
-repeatHello(callBackFunc);
+
+repeatHello(ciccio);

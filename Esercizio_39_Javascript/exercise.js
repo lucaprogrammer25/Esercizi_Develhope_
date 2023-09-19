@@ -25,4 +25,4 @@ checkLogged(isLogged)
 .then(randomNumberCheck)
 .then((message) => console.log(message))
 .catch((err)=>console.error(err))
-.finally(()=>console.log("Operazione compleata"))
+.finally(()=>console.log("Operazione compleata"));

@@ -1,3 +1,5 @@
+const number = 15;
+
 const check = (number) => {
     return new Promise((resolve, reject) => {
         if (number >= 10) {
@@ -8,7 +10,7 @@ const check = (number) => {
     });
 };
 
-const number = 15;
+
 
 check(number)
     .then((message) => {
@@ -17,5 +19,3 @@ check(number)
     .catch((err) => {
         console.log(err); 
     });
-
-
