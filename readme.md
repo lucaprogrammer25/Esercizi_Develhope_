@@ -1,1 +1,1 @@
-Questa repository contiene esercizi.
+Questa repository contiene esercizi di HTML CSS JS
